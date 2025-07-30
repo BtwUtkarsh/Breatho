@@ -35,9 +35,13 @@ The active song gets highlighted with a pause icon.
 Breatho/
 │
 ├── index.html                 # Main webpage
+
 ├── style.css                  # Styling rules
+
 ├── script.js                  # JavaScript logic
+
 ├── Songs/                     # Folder containing MP3 files
+
 └── images/                    # Folder containing images
 
 
