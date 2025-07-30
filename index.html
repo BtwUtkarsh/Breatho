@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breatho</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/ab37827d9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li class="brand"><img src="images/images (1).png" alt="Breatho" />Breatho</li>
+      <li>Home</li>
+      <li>About Us</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="songList">
+      <h1>Breatho</h1>
+      <div class="songItemContainer">
+        <div class="songItem">
+          <img src="images/I-Guess.jpg" alt="1" />
+          <span class="songName">I Guess</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:45
+              <i id="0" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/Jharokhe.jpg" alt="2" />
+          <span class="songName">Ankhiyon Ke Jharokhon Se</span>
+          <span class="songlistplay">
+            <span class="timestamp">04:10
+              <i id="1" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/Talkmyshit.jpg" alt="3" />
+          <span class="songName">Talk My Shit Guarantee</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:35
+              <i id="2" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/signed.jpg" alt="4" />
+          <span class="songName">Signed To God</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:20
+              <i id="3" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/brothers.jpg" alt="5" />
+          <span class="songName">Brothers Anthem</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:45
+              <i id="4" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/selfmade.jpg" alt="6" />
+          <span class="songName">Selfmade Chaache Maame</span>
+          <span class="songlistplay">
+            <span class="timestamp">02:58
+              <i id="5" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/No-Cap.jpg" alt="7" />
+          <span class="songName">No Cap</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:30
+              <i id="6" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/52bars.jpeg" alt="8" />
+          <span class="songName">52 Bars</span>
+          <span class="songlistplay">
+            <span class="timestamp">02:50
+              <i id="7" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="images/Khaab.jpg" alt="9" />
+          <span class="songName">Khaab</span>
+          <span class="songlistplay">
+            <span class="timestamp">03:15
+              <i id="8" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Player Bottom Section -->
+  <div class="bottom">
+    <input type="range" id="myProgressBar" value="0" min="0" max="100" />
+    <div class="icons">
+      <i class="fa-solid fa-3x fa-step-backward" id="previous"></i>
+      <i class="fa-solid fa-3x fa-play-circle" id="masterPlay"></i>
+      <i class="fa-solid fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="images/playing.gif" width="42px" alt="" id="gif" />
+      <span id="masterSongName">I Guess</span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #121212;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Main Container */
+.container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+  min-height: calc(100vh - 150px);
+  color: white;
+}
+
+/* Song List */
+.songList h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00ffe5;
+}
+
+.songItemContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.songItem {
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.songItem:hover {
+  background-color: #3a3a3a;
+}
+
+.songItem img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.songName {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.songlistplay {
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bottom Player Controls */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#myProgressBar {
+  width: 80%;
+  margin-bottom: 10px;
+  accent-color: #00ffe5;
+}
+
+.icons i {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #00ffe5;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons i:hover {
+  transform: scale(1.15);
+}
+
+.songInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+#gif {
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
